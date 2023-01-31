@@ -7,7 +7,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/blog"
-    create: "true"
+    create: true
     slug:  "{{year}}-{{month}}-{{day}}-{{slug}}" 
     fields: 
       - { label: "Title", name: "title", widget: "string" }
@@ -17,4 +17,4 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdowm" }
+      - { label: "Body", name: "body", widget: "markdown" }
